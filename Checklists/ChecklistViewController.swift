@@ -8,27 +8,33 @@
 import UIKit
 
 class ChecklistViewController: UITableViewController {
-    var row0item = ChecklistItem()
-    var row1item = ChecklistItem()
-    var row2item = ChecklistItem()
-    var row3item = ChecklistItem()
-    var row4item = ChecklistItem()
+    var items = [ChecklistItem]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        row0item.text = "Walk the dog"
+        let item1 = ChecklistItem()
+        item1.text = "Walk the dog"
+        items.append(item1)
         
-        row1item.text = "Brush teeth"
-        row1item.checked = true
+        let item2 = ChecklistItem()
+        item1.text = "Brush my teeth"
+        item2.checked = true
+        items.append(item2)
         
-        row2item.text = "Learn iOS development"
-        row2item.checked = true
+        let item3 = ChecklistItem()
+        item1.text = "Learn iOS development"
+        item3.checked = true
+        items.append(item3)
         
-        row3item.text = "Soccer practice"
+        let item4 = ChecklistItem()
+        item1.text = "Soccer practice"
+        items.append(item4)
         
-        row4item.text = "Eat ice cream"
-        row4item.checked = true
+        let item5 = ChecklistItem()
+        item1.text = "Eat ice cream"
+        item5.checked = true
+        items.append(item5)
     }
     //MARK: - Table View Data Source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
