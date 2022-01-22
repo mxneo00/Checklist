@@ -16,6 +16,19 @@ class ChecklistViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        row0item.text = "Walk the dog"
+        
+        row1item.text = "Brush teeth"
+        row1item.checked = true
+        
+        row2item.text = "Learn iOS development"
+        row2item.checked = true
+        
+        row3item.text = "Soccer practice"
+        
+        row4item.text = "Eat ice cream"
+        row4item.checked = true
     }
     //MARK: - Table View Data Source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
