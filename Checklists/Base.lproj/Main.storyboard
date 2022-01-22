@@ -47,7 +47,7 @@
                     <navigationItem key="navigationItem" title="Checklists" id="lNq-xD-xUi">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="9G2-8B-8Rn">
                             <connections>
-                                <segue destination="dN7-g7-mDB" kind="show" id="tOs-qC-06B"/>
+                                <segue destination="dN7-g7-mDB" kind="show" id="1Lb-Ki-67S"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -108,6 +108,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="textField" destination="ppz-ZN-FpD" id="b2m-fW-sEO"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WFq-i0-GAn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
