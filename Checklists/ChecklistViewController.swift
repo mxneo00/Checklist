@@ -42,6 +42,12 @@ class ChecklistViewController: UITableViewController, AddItemViewControllerDeleg
         navigationController?.popViewController(animated: true)
     }
     func addItemViewController(_ controller: AddItemViewController, didFinishAdding item: ChecklistItem) {
+        let newRowIndex = items.count
+        items.append(item)
+        
+        let indexPath = IndexPath(row: newRowIndex, section: 0)
+        let indexPaths = [indexPath]
+        tableView.insertRows(at: indexPaths, with: .automatic)
         navigationController?.popViewController(animated: true)
     }
     //MARK: - Navigation
@@ -92,16 +98,6 @@ class ChecklistViewController: UITableViewController, AddItemViewControllerDeleg
         tableView.deleteRows(at: indexPaths, with: .automatic)
     }
     //MARK: - Actions
-    @IBAction func addItem(){
-        let newRowIndex = items.count
-        
-        let item = ChecklistItem()
-        item.text = "I am a new row"
-        items.append(item)
-        
-        let indexPath = IndexPath(row: newRowIndex, section: 0)
-        let indexPaths = [indexPath]
-        tableView.insertRows(at: indexPaths, with: .automatic)
-    }
+    
 }
 
