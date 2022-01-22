@@ -78,6 +78,9 @@
                                                     <rect key="frame" x="16" y="4" width="343" height="22.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                                                    <connections>
+                                                        <action selector="done" destination="dN7-g7-mDB" eventType="editingDidEndOnExit" id="dfI-gM-tuI"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
