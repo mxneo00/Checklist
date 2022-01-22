@@ -19,21 +19,21 @@ class ChecklistViewController: UITableViewController {
         items.append(item1)
         
         let item2 = ChecklistItem()
-        item1.text = "Brush my teeth"
+        item2.text = "Brush my teeth"
         item2.checked = true
         items.append(item2)
         
         let item3 = ChecklistItem()
-        item1.text = "Learn iOS development"
+        item3.text = "Learn iOS development"
         item3.checked = true
         items.append(item3)
         
         let item4 = ChecklistItem()
-        item1.text = "Soccer practice"
+        item4.text = "Soccer practice"
         items.append(item4)
         
         let item5 = ChecklistItem()
-        item1.text = "Eat ice cream"
+        item5.text = "Eat ice cream"
         item5.checked = true
         items.append(item5)
     }

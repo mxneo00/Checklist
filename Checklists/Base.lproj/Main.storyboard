@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="Checklistitem" id="DSu-FC-1L7">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="ChecklistItem" id="DSu-FC-1L7">
                                 <rect key="frame" x="0.0" y="44.5" width="375" height="23"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DSu-FC-1L7" id="3T2-sM-Lwu">
@@ -47,7 +47,7 @@
                     <navigationItem key="navigationItem" title="Checklists" id="lNq-xD-xUi">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="9G2-8B-8Rn">
                             <connections>
-                                <segue destination="dN7-g7-mDB" kind="show" id="1Lb-Ki-67S"/>
+                                <segue destination="dN7-g7-mDB" kind="show" id="ACN-Hp-4Hc"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -68,14 +68,14 @@
                             <tableViewSection id="kIg-TW-YfY">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="MSZ-0P-Ad0">
-                                        <rect key="frame" x="0.0" y="18" width="375" height="27"/>
+                                        <rect key="frame" x="0.0" y="18" width="375" height="27.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MSZ-0P-Ad0" id="IDy-f0-3xS">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="27"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="27.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ppz-ZN-FpD">
-                                                    <rect key="frame" x="16" y="4" width="343" height="19"/>
+                                                    <rect key="frame" x="16" y="4" width="343" height="19.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -104,7 +104,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="PCm-tw-1Fk">
                             <connections>
-                                <action selector="done" destination="dN7-g7-mDB" id="NZi-tQ-MXR"/>
+                                <action selector="done" destination="dN7-g7-mDB" id="pJy-j7-fh6"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -114,7 +114,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WFq-i0-GAn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1410.4000000000001" y="119.1904047976012"/>
+            <point key="canvasLocation" x="1441" y="125"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Lfb-LX-1JS">
