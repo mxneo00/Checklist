@@ -60,33 +60,58 @@
         <scene sceneID="8Ye-Sr-32M">
             <objects>
                 <tableViewController id="dN7-g7-mDB" customClass="AddItemViewController" customModule="Checklists" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="klz-FQ-Mmp">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="klz-FQ-Mmp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="MSZ-0P-Ad0">
-                                <rect key="frame" x="0.0" y="44.5" width="375" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MSZ-0P-Ad0" id="IDy-f0-3xS">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
+                        <sections>
+                            <tableViewSection id="kIg-TW-YfY">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="MSZ-0P-Ad0">
+                                        <rect key="frame" x="0.0" y="18" width="375" height="27"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MSZ-0P-Ad0" id="IDy-f0-3xS">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="27"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ppz-ZN-FpD">
+                                                    <rect key="frame" x="16" y="4" width="343" height="19"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="ppz-ZN-FpD" secondAttribute="bottom" constant="4" id="285-aP-Svn"/>
+                                                <constraint firstItem="ppz-ZN-FpD" firstAttribute="leading" secondItem="IDy-f0-3xS" secondAttribute="leading" constant="16" id="TAt-qG-nA4"/>
+                                                <constraint firstAttribute="trailing" secondItem="ppz-ZN-FpD" secondAttribute="trailing" constant="16" id="cVc-CT-yCA"/>
+                                                <constraint firstItem="ppz-ZN-FpD" firstAttribute="top" secondItem="IDy-f0-3xS" secondAttribute="top" constant="4" id="eWa-Ir-apb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
                         <connections>
                             <outlet property="dataSource" destination="dN7-g7-mDB" id="59Y-tw-3Vv"/>
                             <outlet property="delegate" destination="dN7-g7-mDB" id="Yxz-Ya-oBH"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Add Item" id="z7g-hT-6vO">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="VvS-6Q-kB4"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="PCm-tw-1Fk"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="VvS-6Q-kB4">
+                            <connections>
+                                <action selector="cancel" destination="dN7-g7-mDB" id="2SH-eC-ptJ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="PCm-tw-1Fk">
+                            <connections>
+                                <action selector="done" destination="dN7-g7-mDB" id="NZi-tQ-MXR"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WFq-i0-GAn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1411" y="120"/>
+            <point key="canvasLocation" x="1410.4000000000001" y="119.1904047976012"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Lfb-LX-1JS">
