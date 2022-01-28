@@ -60,6 +60,9 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
         item5.text = "Eat ice cream"
         item5.checked = true
         items.append(item5)
+        
+        print("Documents  folder is \(documentsDirectory())")
+        print("Data file path is \(dataFilePath())")
     }
     //MARK: - Add Item ViewController Delegates
     func addItemViewControllerDidCancel(_ controller: ItemDetailViewController) {
@@ -139,7 +142,13 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
         let indexPaths = [indexPath]
         tableView.deleteRows(at: indexPaths, with: .automatic)
     }
-    //MARK: - Actions
-    
+    //MARK: -  New changes
+    func documentsDirectory() -> URL {
+        let  paths = FileManager.default.urls(for:  .documentDirectory, in: .userDomainMask)
+        return paths[0]
+    }
+    func dataFilePath() -> URL {
+        return documentsDirectory().appendingPathComponent("Checklists.plist")
+    }
 }
 
