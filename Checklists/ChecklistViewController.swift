@@ -150,5 +150,14 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
     func dataFilePath() -> URL {
         return documentsDirectory().appendingPathComponent("Checklists.plist")
     }
+    func saveChecklistItems() {
+        let encoder  = PropertyListEncoder()
+        do {
+            let data = try encoder.encode(items)
+            try data.write(to: dataFilePath(),options: Data.WritingOptions.atomic)
+        } catch {
+            print("Error encoding item array: \(error.localizedDescription)")
+        }
+    }
 }
 
