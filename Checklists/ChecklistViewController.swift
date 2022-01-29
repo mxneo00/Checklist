@@ -38,11 +38,16 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
     
     var items = [ChecklistItem]()
     
+    var checklist: Checklist!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.largeTitleDisplayMode = .never
         
         loadChecklistItems()
+        
+        title = checklist.name
+        
     }
     //MARK: - Add Item ViewController Delegates
     func addItemViewControllerDidCancel(_ controller: ItemDetailViewController) {
