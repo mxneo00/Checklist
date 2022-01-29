@@ -16,6 +16,7 @@
 		190C3DC6279BC2C400377708 /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190C3DC5279BC2C400377708 /* ChecklistItem.swift */; };
 		190C3DC8279BCBCD00377708 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190C3DC7279BCBCD00377708 /* ItemDetailViewController.swift */; };
 		193A720027A4D57D00E7A8A5 /* AllListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193A71FF27A4D57D00E7A8A5 /* AllListsViewController.swift */; };
+		193A720227A4DBD900E7A8A5 /* Checklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193A720127A4DBD900E7A8A5 /* Checklist.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		190C3DC5279BC2C400377708 /* ChecklistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
 		190C3DC7279BCBCD00377708 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
 		193A71FF27A4D57D00E7A8A5 /* AllListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllListsViewController.swift; sourceTree = "<group>"; };
+		193A720127A4DBD900E7A8A5 /* Checklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checklist.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				190C3DC5279BC2C400377708 /* ChecklistItem.swift */,
 				190C3DC7279BCBCD00377708 /* ItemDetailViewController.swift */,
 				193A71FF27A4D57D00E7A8A5 /* AllListsViewController.swift */,
+				193A720127A4DBD900E7A8A5 /* Checklist.swift */,
 			);
 			path = Checklists;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				190C3DB2279BB55A00377708 /* AppDelegate.swift in Sources */,
 				190C3DB4279BB55A00377708 /* SceneDelegate.swift in Sources */,
 				190C3DC6279BC2C400377708 /* ChecklistItem.swift in Sources */,
+				193A720227A4DBD900E7A8A5 /* Checklist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
