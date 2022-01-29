@@ -68,21 +68,45 @@
 		190C3DB0279BB55A00377708 /* Checklists */ = {
 			isa = PBXGroup;
 			children = (
-				190C3DB1279BB55A00377708 /* AppDelegate.swift */,
-				190C3DB3279BB55A00377708 /* SceneDelegate.swift */,
-				190C3DB5279BB55A00377708 /* ChecklistViewController.swift */,
-				190C3DB7279BB55A00377708 /* Main.storyboard */,
-				190C3DBA279BB55D00377708 /* Assets.xcassets */,
-				190C3DBC279BB55D00377708 /* LaunchScreen.storyboard */,
+				193A720727A6068E00E7A8A5 /* Data Models */,
+				193A720827A606C800E7A8A5 /* View Controllers */,
+				193A720927A606F200E7A8A5 /* Resources */,
 				190C3DBF279BB55D00377708 /* Info.plist */,
-				190C3DC5279BC2C400377708 /* ChecklistItem.swift */,
-				190C3DC7279BCBCD00377708 /* ItemDetailViewController.swift */,
-				193A71FF27A4D57D00E7A8A5 /* AllListsViewController.swift */,
-				193A720127A4DBD900E7A8A5 /* Checklist.swift */,
-				193A720327A4DFC600E7A8A5 /* ListDetailViewController.swift */,
-				193A720527A5BEA400E7A8A5 /* DataModel.swift */,
+				190C3DB1279BB55A00377708 /* AppDelegate.swift */,
+				190C3DB7279BB55A00377708 /* Main.storyboard */,
 			);
 			path = Checklists;
+			sourceTree = "<group>";
+		};
+		193A720727A6068E00E7A8A5 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				193A720127A4DBD900E7A8A5 /* Checklist.swift */,
+				190C3DC5279BC2C400377708 /* ChecklistItem.swift */,
+				193A720527A5BEA400E7A8A5 /* DataModel.swift */,
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		193A720827A606C800E7A8A5 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				193A71FF27A4D57D00E7A8A5 /* AllListsViewController.swift */,
+				190C3DB5279BB55A00377708 /* ChecklistViewController.swift */,
+				190C3DC7279BCBCD00377708 /* ItemDetailViewController.swift */,
+				193A720327A4DFC600E7A8A5 /* ListDetailViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		193A720927A606F200E7A8A5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				190C3DBA279BB55D00377708 /* Assets.xcassets */,
+				190C3DBC279BB55D00377708 /* LaunchScreen.storyboard */,
+				190C3DB3279BB55A00377708 /* SceneDelegate.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
