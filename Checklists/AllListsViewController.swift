@@ -9,6 +9,8 @@ import UIKit
 
 class AllListsViewController: UITableViewController {
     
+    var lists = [Checklist]()
+    
     let cellIdentifier = "ChecklistCell"
 
     override func viewDidLoad() {
@@ -16,6 +18,18 @@ class AllListsViewController: UITableViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
+        
+        var  list = Checklist(name: "Birthdays")
+        lists.append(list)
+        
+        list = Checklist(name: "Groceries")
+        lists.append(list)
+        
+        list = Checklist(name: "Cool Apps")
+        lists.append(list)
+        
+        list = Checklist(name: "To Do")
+        lists.append(list)
     }
 
     // MARK: - Table view data source
