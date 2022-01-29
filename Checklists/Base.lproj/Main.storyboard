@@ -30,7 +30,7 @@
         <!--Add Checklist-->
         <scene sceneID="weZ-vi-aHP">
             <objects>
-                <tableViewController id="TyS-W8-ZX1" customClass="ListDetailViewController" customModule="Checklists" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ListDetailViewController" id="TyS-W8-ZX1" customClass="ListDetailViewController" customModule="Checklists" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="nu7-xg-HC7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -50,7 +50,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                                     <connections>
-                                                        <action selector="done" destination="TyS-W8-ZX1" eventType="editingDidEndOnExit" id="1OX-ac-Qhu"/>
+                                                        <action selector="done" destination="TyS-W8-ZX1" eventType="editingDidEndOnExit" id="lff-lj-RjV"/>
                                                         <outlet property="delegate" destination="cns-HK-qgJ" id="JZw-a9-4hk"/>
                                                     </connections>
                                                 </textField>
@@ -79,12 +79,12 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" enabled="NO" style="plain" systemItem="done" id="bbU-RN-gua">
                             <connections>
-                                <action selector="done" destination="TyS-W8-ZX1" id="nW7-vF-xvD"/>
+                                <action selector="done" destination="TyS-W8-ZX1" id="xvK-V4-oMG"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="doneBarButton" destination="bbU-RN-gua" id="In9-WY-F5b"/>
+                        <outlet property="doneBarButton" destination="bbU-RN-gua" id="wfD-Ql-oKb"/>
                         <outlet property="textField" destination="IgS-98-pcx" id="ja1-iu-Kjg"/>
                     </connections>
                 </tableViewController>
@@ -243,7 +243,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="dni-Cm-9eI"/>
-        <segue reference="y3i-YD-cvp"/>
+        <segue reference="ceZ-OC-KYS"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
