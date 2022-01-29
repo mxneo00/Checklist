@@ -11,7 +11,7 @@
         <scene sceneID="fhM-pe-bBl">
             <objects>
                 <tableViewController title="Checklists" id="cw4-L5-IgU" userLabel="All Lists" customClass="AllListsViewController" customModule="Checklists" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="2j1-Ob-HPz"/>
+                    <navigationItem key="navigationItem" title="Checklists" id="2j1-Ob-HPz"/>
                     <connections>
                         <segue destination="sNr-J0-ePi" kind="show" id="TXM-bw-jka"/>
                     </connections>
@@ -73,7 +73,7 @@
                             <outlet property="delegate" destination="sNr-J0-ePi" id="BC1-Dg-DDS"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="(Name of the Checklist)" id="lNq-xD-xUi">
+                    <navigationItem key="navigationItem" title="(Name of the Checklist)" largeTitleDisplayMode="never" id="lNq-xD-xUi">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="9G2-8B-8Rn">
                             <connections>
                                 <segue destination="dN7-g7-mDB" kind="show" identifier="AddItem" id="ACN-Hp-4Hc"/>
