@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 protocol ItemDetailViewControllerDelegate: AnyObject {
     func itemDetailViewControllerDidCancel(_ controller: ItemDetailViewController)
@@ -55,6 +56,16 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
             item.dueDate = datePicker.date
             
             delegate?.itemDetailViewController(self, didFinishAdding: item)
+        }
+    }
+    @IBAction func shouldRemindToggled(_ switchControl: UISwitch) {
+        textField.resignFirstResponder()
+        
+        if switchControl.isOn {
+            let center = UNUserNotificationCenter.current()
+            center.requestAuthorization(options: [.alert, .sound]) {_, _ in
+                
+            }
         }
     }
     //MARK: - Table View Delegates
