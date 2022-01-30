@@ -12,7 +12,6 @@
 		190C3DB6279BB55A00377708 /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190C3DB5279BB55A00377708 /* ChecklistViewController.swift */; };
 		190C3DB9279BB55A00377708 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 190C3DB7279BB55A00377708 /* Main.storyboard */; };
 		190C3DBB279BB55D00377708 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 190C3DBA279BB55D00377708 /* Assets.xcassets */; };
-		190C3DBE279BB55D00377708 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 190C3DBC279BB55D00377708 /* LaunchScreen.storyboard */; };
 		190C3DC6279BC2C400377708 /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190C3DC5279BC2C400377708 /* ChecklistItem.swift */; };
 		190C3DC8279BCBCD00377708 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190C3DC7279BCBCD00377708 /* ItemDetailViewController.swift */; };
 		193A720027A4D57D00E7A8A5 /* AllListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193A71FF27A4D57D00E7A8A5 /* AllListsViewController.swift */; };
@@ -29,7 +28,6 @@
 		190C3DB5279BB55A00377708 /* ChecklistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistViewController.swift; sourceTree = "<group>"; };
 		190C3DB8279BB55A00377708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		190C3DBA279BB55D00377708 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		190C3DBD279BB55D00377708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		190C3DBF279BB55D00377708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		190C3DC5279BC2C400377708 /* ChecklistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
 		190C3DC7279BCBCD00377708 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
@@ -75,7 +73,6 @@
 				190C3DB3279BB55A00377708 /* SceneDelegate.swift */,
 				190C3DB7279BB55A00377708 /* Main.storyboard */,
 				190C3DBA279BB55D00377708 /* Assets.xcassets */,
-				190C3DBC279BB55D00377708 /* LaunchScreen.storyboard */,
 				193A720327A4DFC600E7A8A5 /* ListDetailViewController.swift */,
 				190C3DC7279BCBCD00377708 /* ItemDetailViewController.swift */,
 				190C3DB5279BB55A00377708 /* ChecklistViewController.swift */,
@@ -146,7 +143,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				190C3DBE279BB55D00377708 /* LaunchScreen.storyboard in Resources */,
 				190C3DBB279BB55D00377708 /* Assets.xcassets in Resources */,
 				190C3DB9279BB55A00377708 /* Main.storyboard in Resources */,
 			);
@@ -181,14 +177,6 @@
 				190C3DB8279BB55A00377708 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		190C3DBC279BB55D00377708 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				190C3DBD279BB55D00377708 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -321,7 +309,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Checklists/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -350,7 +338,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Checklists/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
