@@ -180,20 +180,20 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="ChecklistItem" id="DSu-FC-1L7">
-                                <rect key="frame" x="0.0" y="44.5" width="375" height="43.5"/>
+                                <rect key="frame" x="0.0" y="44.5" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DSu-FC-1L7" id="3T2-sM-Lwu">
-                                    <rect key="frame" x="0.0" y="0.0" width="322" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="322" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPF-H8-xsI">
-                                            <rect key="frame" x="37" y="6" width="265" height="32"/>
+                                            <rect key="frame" x="37" y="6" width="265" height="32.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="√" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j0B-GK-IAc">
-                                            <rect key="frame" x="16" y="8" width="13" height="27"/>
+                                            <rect key="frame" x="16" y="8" width="13" height="27.5"/>
                                             <color key="tintColor" red="0.015686274509803921" green="0.66274509803921566" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="13" id="y8F-SD-hZT"/>
@@ -291,6 +291,8 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Gdv-oj-Reo">
                                                     <rect key="frame" x="310" y="6" width="51" height="31.5"/>
+                                                    <color key="tintColor" red="0.015686274510000001" green="0.66274509800000003" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="onTintColor" red="0.015686274510000001" green="0.66274509800000003" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
